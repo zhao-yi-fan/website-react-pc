@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes, Navigate, NavLink } from "react-router-dom";
+import 'antd';
+import "./App.css";
+import Home from './pages/home'
+import MessageBoard from './pages/messageBoard'
+import Posts from './pages/posts/index'
+import { Top } from './pages/Top'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Top></Top>
+      <Routes>
+        <Route path="/index" element={<Home />}></Route>
+        <Route path="/message-board" element={<MessageBoard />}></Route>
+        <Route path="/posts/:id" element={<Posts />}></Route>
+        <Route path="*" element={<Navigate to="/index" />} />
+      </Routes>
+    </Router>
   );
 }
 
