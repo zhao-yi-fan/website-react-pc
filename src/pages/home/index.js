@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import "./home.css"
+import "./home.scss"
 import { useNavigate } from "react-router-dom"
 import { postData } from '../../mock/index';
 

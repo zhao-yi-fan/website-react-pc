@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, NavLink } from "react-router-dom";
 import 'antd';
-import "./App.css";
+import "./App.scss";
 import Home from './pages/home'
 import MessageBoard from './pages/messageBoard'
 import Posts from './pages/posts/index'

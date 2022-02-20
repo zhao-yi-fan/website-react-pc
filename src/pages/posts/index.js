@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react"
-import "./posts.css"
+import "./posts.scss"
 import { postData } from '../../mock/index';
 
 function InitDetail () {

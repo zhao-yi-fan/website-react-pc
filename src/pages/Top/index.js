@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import './top.css'
+import './top.scss'
 import { Avatar, Popover } from 'antd';
 
 const content = (
