@@ -25,7 +25,7 @@ function personPopover () {
   )
 }
 
-function Top () {
+export default function Top () {
   let state = store.getState().user;
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -105,6 +105,3 @@ function Top () {
   )
 }
 
-export {
-  Top
-}
