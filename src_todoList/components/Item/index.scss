@@ -1,0 +1,10 @@
+.item {
+  &:hover {
+    .del-btn {
+      display: inline-block;
+    }
+  }
+  .del-btn {
+    display: none;
+  }
+}
