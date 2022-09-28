@@ -3,10 +3,12 @@ import Home from './pages/Home'
 import About from './pages/About'
 import MyNavLink from './components/MyNavLink'
 import './App.css'
+import Header from "./components/Header";
 function App () {
 
   return (
     <div>
+      <Header/>
       {/* 
       NavLink可以实现路由标签的高亮 activeClassName指定样式名
       Switch提高路由匹配效率，标签匹配到不会再向下检索。不加的话，会匹配的所有组件都展示，且匹配到还会继续向下匹配
