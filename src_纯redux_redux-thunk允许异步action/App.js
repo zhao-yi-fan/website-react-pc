@@ -7,12 +7,15 @@ import {
 } from './redux/count_action'
 
 class App extends React.Component {
+  /* componentWillUnmount () {
+    this.unsubscribe()
+  }
   // 检测redux数据变化，变化就重新render
-  // componentDidMount () {
-  //   store.subscribe(() => {
-  //     this.setState({})
-  //   })
-  // }
+  componentDidMount () {
+    this.unsubscribe = store.subscribe(() => {
+      this.setState({})
+    })
+  } */
   increment = () => {
     const { value } = this.selectRef
     store.dispatch(incrementAction(+value))
