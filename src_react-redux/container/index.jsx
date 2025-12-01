@@ -6,11 +6,11 @@ import {
 } from "../redux/count_action";
 import App from "../App";
 
-// mapDispatchToProps是方法
 /* const mapStateToProps = (state) => {
   return { count: state };
-};
-
+  };
+  
+// mapDispatchToProps是方法
 const mapDispatchToProps = (dispatch) => {
   return {
     jia: (data) => dispatch(incrementAction(data)),

@@ -1,11 +1,11 @@
 import * as actionTypes from '../action-types'
 
-const intialState = {
+const initialState = {
   username: '',
   password: ''
 }
 
-function counter1 (state = intialState, action) {
+function counter1 (state = initialState, action) {
   switch (action.type) {
     case actionTypes.SET_NAME:
       const { username, password } = action.loginInfo;
